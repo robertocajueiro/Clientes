@@ -1,5 +1,7 @@
 package com.robertocajueiro.clientes.rest;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +29,7 @@ public class ClienteController {
 	}
 	
 	@GetMapping
-	public java.util.List<Cliente> obterTodos(){
+	public List<Cliente> obterTodos(){
 		return repository.findAll();
 	}
 	
