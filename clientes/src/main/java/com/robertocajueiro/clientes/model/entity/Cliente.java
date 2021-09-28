@@ -11,10 +11,16 @@ import javax.persistence.PrePersist;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Cliente {
 	
 	@Id
