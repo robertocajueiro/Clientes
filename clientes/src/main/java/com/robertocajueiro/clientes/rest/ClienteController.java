@@ -19,17 +19,17 @@ import org.springframework.http.HttpStatus;
 
 
 import com.robertocajueiro.clientes.model.entity.Cliente;
-import com.robertocajueiro.clientes.model.repository.ClientesRepository;
+import com.robertocajueiro.clientes.model.repository.ClienteRepository;
 
 
 @RestController
 @RequestMapping("/api/clientes")
 public class ClienteController {
 	
-	private final ClientesRepository repository;
+	private final ClienteRepository repository;
 	
 	@Autowired
-	public ClienteController(ClientesRepository repository) {
+	public ClienteController(ClienteRepository repository) {
 		this.repository = repository;
 	}
 	
