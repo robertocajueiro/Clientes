@@ -20,7 +20,11 @@ export class ClientesFormComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.cliente);
+    this.service
+      .salvar(this.cliente)
+      .subscribe( response => {
+        console.log(response);
+      })
   }
 
 }
