@@ -12,10 +12,10 @@ export class ClientesFormComponent implements OnInit {
 
   cliente: Cliente;
   success: boolean = false;
-  errors!: null|String[];
+  errors: null|String[] = [];
 
   constructor( private service : ClientesService ) {
-     this.cliente = service.getCliente();
+     this.cliente = new Cliente();
    }
 
   ngOnInit(): void {
